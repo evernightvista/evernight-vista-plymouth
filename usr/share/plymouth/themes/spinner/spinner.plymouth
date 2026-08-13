@@ -39,26 +39,27 @@ ModuleName=two-step
 [two-step]
 Font=MiSans VF 12
 TitleFont=MiSans VF Light 30
-ImageDir=/usr/share/plymouth/themes/spinner
+MonospaceFont=Maple Mono NF Regular 12
+ImageDir=/usr/share/plymouth/themes//spinner
 DialogHorizontalAlignment=.5
-DialogVerticalAlignment=.682
+DialogVerticalAlignment=.75
 TitleHorizontalAlignment=.5
-TitleVerticalAlignment=.382
+TitleVerticalAlignment=.77
 HorizontalAlignment=.5
-VerticalAlignment=.7
+VerticalAlignment=.75
 WatermarkHorizontalAlignment=.5
-WatermarkVerticalAlignment=.96
+WatermarkVerticalAlignment=.70
 Transition=none
 TransitionDuration=0.0
 BackgroundStartColor=0x000000
 BackgroundEndColor=0x000000
 ProgressBarBackgroundColor=0x606060
 ProgressBarForegroundColor=0xffffff
-DialogClearsFirmwareBackground=false
+DialogClearsFirmwareBackground=true
 MessageBelowAnimation=true
 
 [boot-up]
-UseEndAnimation=true
+UseEndAnimation=false
 UseFirmwareBackground=true
 
 [shutdown]
@@ -73,20 +74,27 @@ UseFirmwareBackground=true
 SuppressMessages=true
 ProgressBarShowPercentComplete=true
 UseProgressBar=true
-_Title=Installing Updates...
-_SubTitle=Do not turn off your computer
+Title=Installing Updates...
+SubTitle=Do not turn off your computer
 
 [system-upgrade]
 SuppressMessages=true
 ProgressBarShowPercentComplete=true
 UseProgressBar=true
-_Title=Upgrading System...
-_SubTitle=Do not turn off your computer
+Title=Upgrading System...
+SubTitle=Do not turn off your computer
 
 [firmware-upgrade]
 SuppressMessages=true
 ProgressBarShowPercentComplete=true
 UseProgressBar=true
-UseFirmwareBackground=true
-_Title=Upgrading Firmware...
-_SubTitle=Do not turn off your computer
+Title=Upgrading Firmware...
+SubTitle=Do not turn off your computer
+
+[system-reset]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+Title=Resetting System...
+SubTitle=Do not turn off your computer
+
